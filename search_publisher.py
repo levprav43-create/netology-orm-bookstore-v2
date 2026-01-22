@@ -7,7 +7,7 @@ from models import Base, Publisher, Book, Shop, Stock, Sale
 
 # === НАСТРОЙКИ ПОДКЛЮЧЕНИЯ ===
 DB_USER = os.getenv('DB_USER', 'postgres')
-DB_PASSWORD = os.getenv('DB_PASSWORD', 'makinTosh1122')  # ← Замени на свой пароль, если нужно
+DB_PASSWORD = os.getenv('DB_PASSWORD')
 DB_NAME = os.getenv('DB_NAME', 'bookstore')
 DB_HOST = os.getenv('DB_HOST', 'localhost')
 DB_PORT = os.getenv('DB_PORT', '5432')
